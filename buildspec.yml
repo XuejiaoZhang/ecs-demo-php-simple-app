@@ -14,7 +14,7 @@ phases:
 
     commands:
 
--    docker build --tag "替换创建好的ECR镜像仓库的URI:${TAG}" .
+      - docker build --tag "替换创建好的ECR镜像仓库的URI:${TAG}" .
 
   post_build:
 
