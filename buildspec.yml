@@ -16,13 +16,13 @@ phases:
 
     commands:
 
-      - docker build --tag "替换创建好的ECR镜像仓库的URI:${TAG}" .
+      - docker build --tag "323080756126.dkr.ecr.us-east-2.amazonaws.com/cicd-ecr-2020-z:${TAG}" .
 
   post_build:
 
     commands:
 
-      - docker push "替换创建好的ECR镜像仓库的URI:${TAG}"
+      - docker push "323080756126.dkr.ecr.us-east-2.amazonaws.com/cicd-ecr-2020-z:${TAG}"
 
       - printf '{"tag":"%s"}' $TAG > build.json
 
