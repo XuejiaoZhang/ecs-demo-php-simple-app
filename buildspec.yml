@@ -29,4 +29,6 @@ phases:
 
 artifacts:
 
-  files: build.json
+  files: 
+  - build.json
+  - service.yaml
