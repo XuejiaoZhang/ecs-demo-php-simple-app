@@ -32,4 +32,4 @@ artifacts:
 
   files: 
   - build.json
-  - service.yaml
+  - service.yml
