@@ -1,0 +1,14 @@
+{
+
+  # "Tag" : { "Fn::GetParam" : [ "cicd-codebuild-2020-z", "build.json", "tag" ] },
+  "Tag" : "latest",
+
+  "DesiredCount": "2",
+
+  "Cluster": "cicd-2020-z-ec2",
+
+  "TargetGroup": "arn:aws:elasticloadbalancing:us-east-2:323080756126:targetgroup/alb-tg-2020-z/4a400b67fb0d3919",
+
+  "Repository": "cicd-ecr-2020-z"
+
+}
